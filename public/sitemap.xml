@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://taxagon.co/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://taxagon.co/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taxagon.co/pricing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://taxagon.co/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taxagon.co/tax-tools</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://taxagon.co/services/individual</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://taxagon.co/services/business</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://taxagon.co/services/fbar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taxagon.co/services/nri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taxagon.co/services/bookkeeping</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taxagon.co/services/passport</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://taxagon.co/login</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>
