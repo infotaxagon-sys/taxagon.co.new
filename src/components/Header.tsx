@@ -128,7 +128,7 @@ export default function Header() {
 
               {/* Get Started — filled button */}
               <Link
-                to="/contact"
+                to="/get-started"
                 className="hidden sm:inline-flex items-center gap-1.5 bg-navy hover:bg-navy-dark text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-all btn-shine shadow-sm"
               >
                 Get Started
@@ -220,7 +220,7 @@ export default function Header() {
 
               <div className="p-4 border-t border-parchment-dark space-y-2.5">
                 <Link
-                  to="/contact"
+                  to="/get-started"
                   className="flex items-center justify-center w-full bg-navy text-white font-bold py-3.5 rounded-xl transition-colors hover:bg-navy-dark"
                 >
                   Get Started

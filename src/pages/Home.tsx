@@ -88,7 +88,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
           >
             <Link
-              to="/contact"
+              to="/get-started"
               className="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-bold px-8 py-4 rounded-full transition-all btn-shine shadow-brand text-base"
             >
               Get Started Today
@@ -239,7 +239,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/contact"
+                  to="/get-started"
                   className="inline-flex items-center justify-center gap-2 bg-navy text-white font-bold px-9 py-4 rounded-full hover:bg-navy-dark transition-all btn-shine shadow-brand text-base"
                 >
                   Get Started Today

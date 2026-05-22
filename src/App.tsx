@@ -16,6 +16,7 @@ import ForeignReporting from '@/pages/services/ForeignReporting'
 import IndianTax from '@/pages/services/IndianTax'
 import Bookkeeping from '@/pages/services/Bookkeeping'
 import Passport from '@/pages/services/Passport'
+import GetStarted from '@/pages/GetStarted'
 import Login from '@/pages/Login'
 import Dashboard from '@/pages/Dashboard'
 import NotFound from '@/pages/NotFound'
@@ -56,6 +57,7 @@ function AnimatedRoutes() {
           <Route path="/services/nri" element={<IndianTax />} />
           <Route path="/services/bookkeeping" element={<Bookkeeping />} />
           <Route path="/services/passport" element={<Passport />} />
+          <Route path="/get-started" element={<GetStarted />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
