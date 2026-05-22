@@ -81,7 +81,7 @@ export default function TaxTools() {
                       whileHover={{ y: -4, scale: 1.01 }}
                       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
                       id={resource.anchor}
-                      className={`flex flex-col gap-4 p-6 rounded-2xl border transition-all group h-full ${isHighlighted ? 'border-indigo-deep bg-sky-tint shadow-brand' : 'border-slate-200 bg-white hover:border-indigo-deep/40 hover:shadow-card'}`}
+                      className="flex flex-col gap-4 p-6 rounded-2xl border border-slate-200 bg-white hover:border-indigo-deep/40 hover:shadow-card transition-all group h-full"
                       aria-label={`${resource.title} — opens official external site`}
                       style={{ animationDelay: `${i * 60}ms` }}
                     >
