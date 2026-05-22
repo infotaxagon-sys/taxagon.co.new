@@ -692,15 +692,15 @@ function Step3({ firstName }: { firstName: string }) {
         </h2>
         <p className="text-slate-600 text-base leading-relaxed mb-8 max-w-md mx-auto">
           We've received your details. A member of the Taxagon team will review your profile and send you a{' '}
-          <strong className="text-navy">Canopy Client Portal invite</strong>{' '}
-          to your email within <strong className="text-navy">1–2 business days</strong>.
+          <strong className="text-navy">Client Portal invite</strong>{' '}
+          to your email within <strong className="text-navy">24 hours</strong>.
         </p>
 
         <div className="bg-parchment rounded-3xl p-6 mb-8 text-left max-w-sm mx-auto">
           <p className="text-xs font-bold tracking-widest text-gold uppercase mb-4">What Happens Next</p>
           <ul className="space-y-3.5">
             {[
-              { icon: Mail, text: 'Check your inbox for a Canopy portal invite' },
+              { icon: Mail, text: 'Check your inbox for a Client Portal invite' },
               { icon: FileText, text: 'Upload your tax documents securely through the portal' },
               { icon: Clock, text: 'Your dedicated CPA will review and reach out within 48 hrs' },
               { icon: DollarSign, text: 'Receive a custom quote and begin filing' },
