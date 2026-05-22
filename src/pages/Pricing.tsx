@@ -4,6 +4,9 @@ import { CheckCircle2, ArrowRight, Gift, Star, MessageSquare } from 'lucide-reac
 import Section, { SectionItem } from '@/components/Section'
 import { PRICING_TABLE, SITE } from '@/lib/constants'
 
+declare global { interface Window { Calendly?: { initPopupWidget: (o: { url: string }) => void } } }
+const openCalendly = () => window.Calendly?.initPopupWidget({ url: 'https://calendly.com/taxagon-info/30min?hide_gdpr_banner=1' })
+
 export default function Pricing() {
   return (
     <div className="overflow-x-hidden">
@@ -185,13 +188,13 @@ export default function Pricing() {
               <p className="text-slate-500 text-sm mb-5">
                 Speak to a lead accountant for a custom quote tailored to your situation.
               </p>
-              <Link
-                to="/contact"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-bold px-8 py-4 rounded-full transition-all btn-shine shadow-brand"
               >
                 <MessageSquare size={16} aria-hidden="true" />
                 Book Strategy Session
-              </Link>
+              </button>
             </SectionItem>
           </Section>
         </div>

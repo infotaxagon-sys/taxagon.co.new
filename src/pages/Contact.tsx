@@ -3,6 +3,20 @@ import { Phone, Mail, MessageCircle, MapPin, Calendar, Upload, ExternalLink } fr
 import Section, { SectionItem } from '@/components/Section'
 import { SITE } from '@/lib/constants'
 
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (opts: { url: string }) => void
+    }
+  }
+}
+
+function openCalendly() {
+  window.Calendly?.initPopupWidget({
+    url: 'https://calendly.com/taxagon-info/30min?hide_gdpr_banner=1',
+  })
+}
+
 export default function Contact() {
   return (
     <div className="overflow-x-hidden">
@@ -73,12 +87,12 @@ export default function Contact() {
                   <h3 className="font-bold font-sora">Book a Consultation</h3>
                 </div>
                 <p className="text-blue-100 text-sm mb-4">Schedule a free strategy session with our tax experts.</p>
-                <a
-                  href="mailto:info@taxagon.co?subject=Consultation Request"
+                <button
+                  onClick={openCalendly}
                   className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-sky-tint transition-colors btn-shine"
                 >
                   Schedule Now
-                </a>
+                </button>
               </div>
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-2xl">
                 <div className="flex items-center gap-3 mb-3">
