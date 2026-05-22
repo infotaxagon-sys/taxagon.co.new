@@ -1,32 +1,9 @@
 import { motion } from 'framer-motion'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
-import { Phone, Mail, MessageCircle, MapPin, Calendar, Upload, CheckCircle2, ExternalLink } from 'lucide-react'
+import { Phone, Mail, MessageCircle, MapPin, Calendar, Upload, ExternalLink } from 'lucide-react'
 import Section, { SectionItem } from '@/components/Section'
 import { SITE } from '@/lib/constants'
 
-const schema = z.object({
-  name: z.string().min(2, 'Name is required'),
-  email: z.string().email('Valid email required'),
-  phone: z.string().optional(),
-  topic: z.string().min(1, 'Please select a topic'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-})
-type FormData = z.infer<typeof schema>
-
 export default function Contact() {
-  const { register, handleSubmit, formState: { errors, isSubmitting, isSubmitSuccessful }, reset } = useForm<FormData>({
-    resolver: zodResolver(schema),
-  })
-
-  const onSubmit = async (data: FormData) => {
-    // TODO: wire to real backend /api/contact
-    await new Promise(r => setTimeout(r, 800))
-    console.log('Contact form submission:', data)
-    reset()
-  }
-
   return (
     <div className="overflow-x-hidden">
       {/* ── HERO ── */}
@@ -34,7 +11,7 @@ export default function Contact() {
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
           <div className="hero-blob absolute top-[-10%] right-[0%] w-[400px] h-[400px] rounded-full bg-indigo-deep/8" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xs font-bold tracking-widest text-indigo-deep uppercase mb-4">
             Contact Us
           </motion.p>
@@ -60,7 +37,7 @@ export default function Contact() {
       {/* ── CONTACT GRID ── */}
       <section className="py-20 bg-white" aria-label="Contact details">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Section className="grid lg:grid-cols-3 gap-8 mb-16">
+          <Section className="grid lg:grid-cols-3 gap-8">
             {/* Contact channels */}
             <SectionItem className="lg:col-span-1 space-y-4">
               <h2 className="text-xl font-bold font-sora text-slate-900 mb-5">Get in Touch</h2>
@@ -144,116 +121,6 @@ export default function Contact() {
                   <MapPin size={28} className="text-indigo-deep mx-auto mb-2" aria-hidden="true" />
                   <p className="text-indigo-deep font-semibold text-sm">Round Rock, TX</p>
                 </div>
-              </div>
-            </SectionItem>
-          </Section>
-
-          {/* ── CONTACT FORM ── */}
-          <Section>
-            <SectionItem className="max-w-2xl mx-auto">
-              <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-card">
-                <h2 className="text-2xl font-bold font-sora text-slate-900 mb-2">Send Us a Message</h2>
-                <p className="text-slate-500 text-sm mb-8">We'll respond within 24 hours on business days.</p>
-
-                {isSubmitSuccessful ? (
-                  <div className="text-center py-12">
-                    <CheckCircle2 size={48} className="text-green-success mx-auto mb-4" aria-hidden="true" />
-                    <h3 className="text-xl font-bold font-sora text-slate-900 mb-2">Message Sent!</h3>
-                    <p className="text-slate-500">We'll be in touch within 24 hours.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit(onSubmit)} noValidate aria-label="Contact form">
-                    <div className="grid sm:grid-cols-2 gap-5 mb-5">
-                      <div>
-                        <label htmlFor="contact-name" className="block text-sm font-semibold text-slate-700 mb-1.5">Full Name *</label>
-                        <input
-                          id="contact-name"
-                          type="text"
-                          {...register('name')}
-                          placeholder="Your full name"
-                          className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-deep focus:ring-1 focus:ring-indigo-deep/30 transition-colors"
-                          aria-describedby={errors.name ? 'name-error' : undefined}
-                          aria-invalid={!!errors.name}
-                        />
-                        {errors.name && <p id="name-error" className="mt-1 text-xs text-red-500" role="alert">{errors.name.message}</p>}
-                      </div>
-                      <div>
-                        <label htmlFor="contact-email" className="block text-sm font-semibold text-slate-700 mb-1.5">Email Address *</label>
-                        <input
-                          id="contact-email"
-                          type="email"
-                          {...register('email')}
-                          placeholder="you@example.com"
-                          className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-deep focus:ring-1 focus:ring-indigo-deep/30 transition-colors"
-                          aria-describedby={errors.email ? 'email-error' : undefined}
-                          aria-invalid={!!errors.email}
-                        />
-                        {errors.email && <p id="email-error" className="mt-1 text-xs text-red-500" role="alert">{errors.email.message}</p>}
-                      </div>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 gap-5 mb-5">
-                      <div>
-                        <label htmlFor="contact-phone" className="block text-sm font-semibold text-slate-700 mb-1.5">Phone (optional)</label>
-                        <input
-                          id="contact-phone"
-                          type="tel"
-                          {...register('phone')}
-                          placeholder="+1 (555) 000-0000"
-                          className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-deep focus:ring-1 focus:ring-indigo-deep/30 transition-colors"
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="contact-topic" className="block text-sm font-semibold text-slate-700 mb-1.5">Topic *</label>
-                        <select
-                          id="contact-topic"
-                          {...register('topic')}
-                          className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-deep focus:ring-1 focus:ring-indigo-deep/30 transition-colors bg-white appearance-none"
-                          aria-describedby={errors.topic ? 'topic-error' : undefined}
-                          aria-invalid={!!errors.topic}
-                        >
-                          <option value="">Select a topic</option>
-                          <option value="individual">Individual Tax Filing</option>
-                          <option value="business">Business Tax Services</option>
-                          <option value="fbar">FBAR / FATCA / Foreign Reporting</option>
-                          <option value="nri">NRI / Indian Tax Services</option>
-                          <option value="bookkeeping">Bookkeeping & CFO</option>
-                          <option value="pricing">Pricing / Quote</option>
-                          <option value="other">Other</option>
-                        </select>
-                        {errors.topic && <p id="topic-error" className="mt-1 text-xs text-red-500" role="alert">{errors.topic.message}</p>}
-                      </div>
-                    </div>
-
-                    <div className="mb-6">
-                      <label htmlFor="contact-message" className="block text-sm font-semibold text-slate-700 mb-1.5">Message *</label>
-                      <textarea
-                        id="contact-message"
-                        {...register('message')}
-                        rows={5}
-                        placeholder="Tell us about your tax situation or question..."
-                        className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-deep focus:ring-1 focus:ring-indigo-deep/30 transition-colors resize-none"
-                        aria-describedby={errors.message ? 'message-error' : undefined}
-                        aria-invalid={!!errors.message}
-                      />
-                      {errors.message && <p id="message-error" className="mt-1 text-xs text-red-500" role="alert">{errors.message.message}</p>}
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-indigo-deep hover:bg-indigo-deep-dark disabled:opacity-60 text-white font-bold py-4 rounded-xl transition-all btn-shine shadow-brand flex items-center justify-center gap-2"
-                      aria-busy={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" aria-hidden="true" />
-                          Sending...
-                        </>
-                      ) : 'Send Message'}
-                    </button>
-                  </form>
-                )}
               </div>
             </SectionItem>
           </Section>
