@@ -119,12 +119,14 @@ export default function Header() {
             {/* Right side */}
             <div className="flex items-center gap-3">
               {/* Client Login — text link */}
-              <Link
-                to="/login"
+              <a
+                href="https://app.canopytax.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center text-sm font-semibold text-navy hover:text-gold transition-colors px-1"
               >
                 Client Login
-              </Link>
+              </a>
 
               {/* Get Started — filled button */}
               <Link
@@ -225,12 +227,14 @@ export default function Header() {
                 >
                   Get Started
                 </Link>
-                <Link
-                  to="/login"
+                <a
+                  href="https://app.canopytax.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-full border border-navy/20 text-navy font-semibold py-3 rounded-xl transition-colors hover:bg-warm-tint text-sm"
                 >
                   Client Login
-                </Link>
+                </a>
               </div>
             </motion.aside>
           </>
