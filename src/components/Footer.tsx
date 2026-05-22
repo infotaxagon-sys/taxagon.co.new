@@ -58,13 +58,10 @@ export default function Footer() {
 
           {/* Brand */}
           <motion.div style={{ y: brandY }}>
-            <Link to="/" className="flex items-center gap-2.5 mb-5 group" aria-label="Taxagon home">
-              <div className="w-9 h-9 rounded-2xl bg-gold flex items-center justify-center shadow-sm">
-                <span className="text-navy font-bold text-lg font-sora leading-none">T</span>
+            <Link to="/" className="inline-flex mb-5 group" aria-label="Taxagon home">
+              <div className="bg-white rounded-xl px-3 py-2 transition-opacity group-hover:opacity-80">
+                <img src="/taxagon_black_on_white.png" alt="Taxagon" className="h-8 w-auto" />
               </div>
-              <span className="font-bold text-xl text-white font-sora tracking-tight">
-                Tax<em className="not-italic text-gold">agon</em>
-              </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-[240px]">
               {SITE.tagline}

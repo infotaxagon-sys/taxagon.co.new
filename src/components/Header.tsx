@@ -40,13 +40,12 @@ export default function Header() {
           <div className="flex items-center justify-between">
 
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2.5 group" aria-label="Taxagon home">
-              <div className="w-9 h-9 rounded-2xl bg-navy flex items-center justify-center shadow-sm transition-transform group-hover:scale-105">
-                <span className="text-white font-bold text-lg font-sora leading-none">T</span>
-              </div>
-              <span className="font-bold text-xl text-navy font-sora tracking-tight">
-                Tax<em className="not-italic text-gold">agon</em>
-              </span>
+            <Link to="/" className="flex items-center group" aria-label="Taxagon home">
+              <img
+                src="/taxagon_black_on_white.png"
+                alt="Taxagon"
+                className="h-9 w-auto transition-opacity group-hover:opacity-75"
+              />
             </Link>
 
             {/* Desktop Nav */}
@@ -170,9 +169,7 @@ export default function Header() {
               aria-label="Mobile navigation"
             >
               <div className="flex items-center justify-between p-5 border-b border-parchment-dark">
-                <span className="font-bold text-lg font-sora text-navy">
-                  Tax<em className="not-italic text-gold">agon</em>
-                </span>
+                <img src="/taxagon_black_on_white.png" alt="Taxagon" className="h-8 w-auto" />
                 <button
                   onClick={() => setMobileOpen(false)}
                   aria-label="Close menu"
