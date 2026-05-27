@@ -7,7 +7,7 @@ export const SITE = {
   phone: '+1 737-381-2330',
   email: 'info@taxagon.co',
   whatsapp: '+91 996-3260-743',
-  portalUrl: 'https://app.canopytax.com/',
+  portalUrl: 'https://taxagon.clientportal.com/#/login',
   copyright: '© 2026 Taxagon. All rights reserved. Austin based Tax & Accounting compliance service.',
 }
 

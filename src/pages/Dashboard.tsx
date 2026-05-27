@@ -203,7 +203,7 @@ function OverviewContent({ user }: { user: { name: string } }) {
           </div>
           <ChevronRight size={16} className="text-slate-400 group-hover:text-indigo-deep transition-colors" aria-hidden="true" />
         </Link>
-        <a href="https://app.canopytax.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-white rounded-2xl border border-slate-200 p-5 hover:border-indigo-deep/30 hover:shadow-card transition-all group">
+        <a href="https://taxagon.clientportal.com/#/login" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-white rounded-2xl border border-slate-200 p-5 hover:border-indigo-deep/30 hover:shadow-card transition-all group">
           <Upload size={20} className="text-indigo-deep" aria-hidden="true" />
           <div className="flex-1">
             <p className="font-semibold text-slate-900 text-sm">Upload documents</p>
@@ -224,7 +224,7 @@ function DocumentsContent() {
       </div>
       <h3 className="text-lg font-bold font-sora text-slate-900 mb-2">No documents yet</h3>
       <p className="text-slate-500 text-sm mb-6 max-w-xs mx-auto">Upload your tax documents securely to get started with your filing.</p>
-      <a href="https://app.canopytax.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-indigo-deep hover:bg-indigo-deep-dark text-white font-bold px-6 py-3 rounded-xl transition-all btn-shine">
+      <a href="https://taxagon.clientportal.com/#/login" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-indigo-deep hover:bg-indigo-deep-dark text-white font-bold px-6 py-3 rounded-xl transition-all btn-shine">
         Upload via Portal
       </a>
     </div>

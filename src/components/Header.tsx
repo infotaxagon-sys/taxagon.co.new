@@ -119,7 +119,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               {/* Client Login — text link */}
               <a
-                href="https://app.canopytax.com/"
+                href="https://taxagon.clientportal.com/#/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center text-sm font-semibold text-navy hover:text-gold transition-colors px-1"
@@ -225,7 +225,7 @@ export default function Header() {
                   Get Started
                 </Link>
                 <a
-                  href="https://app.canopytax.com/"
+                  href="https://taxagon.clientportal.com/#/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full border border-navy/20 text-navy font-semibold py-3 rounded-xl transition-colors hover:bg-warm-tint text-sm"
