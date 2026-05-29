@@ -28,7 +28,7 @@ export default function TaxTools() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xs font-bold tracking-widest text-indigo-deep uppercase mb-4">
-            Refund & Payment Center
+            IRS Center
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -36,8 +36,8 @@ export default function TaxTools() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold font-sora text-slate-900 leading-tight mb-5"
           >
-            Tax Tools &{' '}
-            <em className="not-italic text-indigo-deep">Refund Tracking</em>
+            IRS &{' '}
+            <em className="not-italic text-indigo-deep">Tax Tools Center</em>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}

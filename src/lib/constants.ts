@@ -27,7 +27,7 @@ export const NAV_LINKS = [
   },
   { label: 'Pricing', href: '/pricing' },
   {
-    label: 'Refund & Payment Center',
+    label: 'IRS Center',
     href: '/tax-tools',
     dropdown: [
       { label: 'Federal Refund Status', href: '/tax-tools/federal-refund' },
@@ -50,7 +50,7 @@ export const FOOTER_SERVICES = [
 ]
 
 export const FOOTER_TAX_TOOLS = [
-  { label: 'Refund & Payment Center', href: '/tax-tools' },
+  { label: 'IRS Center', href: '/tax-tools' },
   { label: 'Federal Refund Status', href: '/tax-tools/federal-refund' },
   { label: 'IRS Online Account', href: '/tax-tools/federal-payment' },
   { label: 'Make Federal Payment', href: '/tax-tools/federal-payment' },
