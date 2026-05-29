@@ -35,7 +35,7 @@ export default function About() {
           >
             Headquartered in Austin, Texas, Taxagon provides comprehensive tax compliance and strategic planning for{' '}
             <strong className="text-navy">
-              <AnimatedCounter to={6500} suffix="+" /> clients
+              <AnimatedCounter to={2500} suffix="+" /> clients
             </strong>{' '}
             across the United States and overseas.
           </motion.p>
@@ -48,8 +48,7 @@ export default function About() {
             className="inline-flex flex-wrap items-center justify-center gap-6 bg-white/70 backdrop-blur border border-white/60 rounded-4xl px-8 py-5 shadow-sm"
           >
             {[
-              { val: 6500, suf: '+', label: 'Clients Served' },
-              { val: 15, suf: '+', label: 'Years Experience' },
+              { val: 2500, suf: '+', label: 'Clients Served' },
               { val: 50, suf: '+', label: 'States Covered' },
             ].map(({ val, suf, label }) => (
               <div key={label} className="text-center px-3">

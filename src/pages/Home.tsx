@@ -109,7 +109,7 @@ export default function Home() {
             transition={{ delay: 0.85 }}
             className="inline-flex flex-wrap items-center justify-center gap-6 bg-white/70 backdrop-blur border border-white/60 rounded-3xl px-8 py-4 shadow-sm"
           >
-            {[['6,500+', 'Clients Served'], ['98%', 'Satisfaction Rate'], ['15+', 'Years Experience'], ['50+', 'States Covered']].map(([num, label]) => (
+            {[['2,500+', 'Clients Served'], ['98%', 'Satisfaction Rate'], ['50+', 'States Covered']].map(([num, label]) => (
               <div key={label} className="text-center px-2">
                 <div className="text-xl font-bold font-sora text-navy">{num}</div>
                 <div className="text-xs text-slate-500 mt-0.5">{label}</div>
