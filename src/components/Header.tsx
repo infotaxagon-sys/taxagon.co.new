@@ -45,7 +45,6 @@ export default function Header() {
                 src="/taxagon_black_on_white.png"
                 alt="Taxagon"
                 className="h-9 w-auto transition-opacity group-hover:opacity-75"
-                style={{ mixBlendMode: 'multiply' }}
               />
             </Link>
 
@@ -170,7 +169,7 @@ export default function Header() {
               aria-label="Mobile navigation"
             >
               <div className="flex items-center justify-between p-5 border-b border-parchment-dark">
-                <img src="/taxagon_black_on_white.png" alt="Taxagon" className="h-8 w-auto" style={{ mixBlendMode: 'multiply' }} />
+                <img src="/taxagon_black_on_white.png" alt="Taxagon" className="h-8 w-auto" />
                 <button
                   onClick={() => setMobileOpen(false)}
                   aria-label="Close menu"
