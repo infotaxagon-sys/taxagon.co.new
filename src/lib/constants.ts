@@ -34,6 +34,7 @@ export const NAV_LINKS = [
       { label: 'State Refund Status', href: '/tax-tools/state-refund' },
       { label: 'Make Federal Payment', href: '/tax-tools/federal-payment' },
       { label: 'State Tax Agencies', href: '/tax-tools/state-payment' },
+      { label: 'Credits & Deductions', href: '/credits-deductions' },
     ],
   },
   { label: 'Contact Us', href: '/contact' },

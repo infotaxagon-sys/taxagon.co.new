@@ -17,6 +17,7 @@ import IndianTax from '@/pages/services/IndianTax'
 import Bookkeeping from '@/pages/services/Bookkeeping'
 import Passport from '@/pages/services/Passport'
 import GetStarted from '@/pages/GetStarted'
+import CreditsDeductions from '@/pages/CreditsDeductions'
 import Login from '@/pages/Login'
 import Dashboard from '@/pages/Dashboard'
 import NotFound from '@/pages/NotFound'
@@ -51,6 +52,7 @@ function AnimatedRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/tax-tools" element={<TaxTools />} />
           <Route path="/tax-tools/:section" element={<TaxTools />} />
+          <Route path="/credits-deductions" element={<CreditsDeductions />} />
           <Route path="/services/individual" element={<Individual />} />
           <Route path="/services/business" element={<Business />} />
           <Route path="/services/fbar" element={<ForeignReporting />} />
