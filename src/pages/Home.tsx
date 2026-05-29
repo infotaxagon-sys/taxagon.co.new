@@ -40,7 +40,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 bg-white/80 backdrop-blur border border-navy/10 rounded-full px-4 py-1.5 text-xs font-semibold text-navy mb-8 shadow-sm"
           >
             <CheckCircle2 size={13} className="text-green-success" aria-hidden="true" />
-            IRS Registered · Austin, Texas · 6,500+ clients served
+            IRS Registered · Austin, Texas · 2,500+ clients served
           </motion.div>
 
           {/* Headline */}
