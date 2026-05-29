@@ -60,10 +60,10 @@ export default function Footer() {
           <motion.div style={{ y: brandY }}>
             <Link to="/" className="inline-flex mb-5 group" aria-label="Taxagon home">
               <img
-                src="/taxagon_black_on_white.png"
+                src="/logo.png"
                 alt="Taxagon"
                 className="h-8 w-auto transition-opacity group-hover:opacity-80"
-                style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                style={{ filter: 'invert(1)' }}
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-[240px]">

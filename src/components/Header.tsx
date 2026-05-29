@@ -42,7 +42,7 @@ export default function Header() {
             {/* Logo */}
             <Link to="/" className="flex items-center group" aria-label="Taxagon home">
               <img
-                src="/taxagon_black_on_white.png"
+                src="/logo.png"
                 alt="Taxagon"
                 className="h-9 w-auto transition-opacity group-hover:opacity-75"
               />
@@ -169,7 +169,7 @@ export default function Header() {
               aria-label="Mobile navigation"
             >
               <div className="flex items-center justify-between p-5 border-b border-parchment-dark">
-                <img src="/taxagon_black_on_white.png" alt="Taxagon" className="h-8 w-auto" />
+                <img src="/logo.png" alt="Taxagon" className="h-8 w-auto" />
                 <button
                   onClick={() => setMobileOpen(false)}
                   aria-label="Close menu"
