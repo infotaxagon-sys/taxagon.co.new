@@ -49,6 +49,7 @@ export default function About() {
           >
             {[
               { val: 2500, suf: '+', label: 'Clients Served' },
+              { val: 98, suf: '%', label: 'Satisfaction Rate' },
               { val: 50, suf: '+', label: 'States Covered' },
             ].map(({ val, suf, label }) => (
               <div key={label} className="text-center px-3">
