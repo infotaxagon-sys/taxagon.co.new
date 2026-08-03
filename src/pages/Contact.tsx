@@ -56,7 +56,7 @@ export default function Contact() {
             <SectionItem className="lg:col-span-1 space-y-4">
               <h2 className="text-xl font-bold font-sora text-slate-900 mb-5">Get in Touch</h2>
               {[
-                { icon: Phone, label: 'Call Now', value: SITE.phone, href: `tel:${SITE.phone}`, color: 'bg-blue-50 text-blue-600' },
+                { icon: Phone, label: 'Call Now', value: SITE.phone, href: `tel:${SITE.phone}`, color: 'bg-indigo-50 text-indigo-600' },
                 { icon: Mail, label: 'Email Us', value: SITE.email, href: `mailto:${SITE.email}`, color: 'bg-green-50 text-green-600' },
                 { icon: MessageCircle, label: 'WhatsApp', value: SITE.whatsapp, href: `https://wa.me/${SITE.whatsapp.replace(/[^0-9]/g, '')}`, color: 'bg-emerald-50 text-emerald-600' },
               ].map(({ icon: Icon, label, value, href, color }) => (
@@ -86,7 +86,7 @@ export default function Contact() {
                   <Calendar size={20} aria-hidden="true" />
                   <h3 className="font-bold font-sora">Book a Consultation</h3>
                 </div>
-                <p className="text-blue-100 text-sm mb-4">Schedule a free strategy session with our tax experts.</p>
+                <p className="text-indigo-100 text-sm mb-4">Schedule a free strategy session with our tax experts.</p>
                 <button
                   onClick={openCalendly}
                   className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-sky-tint transition-colors btn-shine"

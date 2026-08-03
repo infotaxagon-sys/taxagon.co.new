@@ -63,7 +63,7 @@ export default function Footer() {
                 src="/logo.png"
                 alt="Taxagon"
                 className="h-8 w-auto transition-opacity group-hover:opacity-80"
-                style={{ filter: 'invert(1)' }}
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-[240px]">

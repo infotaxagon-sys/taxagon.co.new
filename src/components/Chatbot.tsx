@@ -69,7 +69,7 @@ export default function Chatbot() {
               </div>
               <div className="flex-1">
                 <p className="text-white font-semibold text-sm">Taxagon Assistant</p>
-                <p className="text-blue-200 text-xs">Ask me anything about taxes</p>
+                <p className="text-indigo-200 text-xs">Ask me anything about taxes</p>
               </div>
               <button
                 onClick={() => setOpen(false)}

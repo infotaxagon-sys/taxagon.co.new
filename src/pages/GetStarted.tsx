@@ -543,7 +543,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
             </div>
             <div>
               <p className="font-bold text-sm font-sora">Individual</p>
-              <p className={cn('text-xs mt-0.5 leading-snug', filingType === 'individual' ? 'text-blue-200' : 'text-slate-400')}>
+              <p className={cn('text-xs mt-0.5 leading-snug', filingType === 'individual' ? 'text-indigo-200' : 'text-slate-400')}>
                 Personal tax returns, W-2, freelance, investments
               </p>
             </div>
@@ -577,7 +577,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
             </div>
             <div>
               <p className="font-bold text-sm font-sora">Business</p>
-              <p className={cn('text-xs mt-0.5 leading-snug', filingType === 'business' ? 'text-blue-200' : 'text-slate-400')}>
+              <p className={cn('text-xs mt-0.5 leading-snug', filingType === 'business' ? 'text-indigo-200' : 'text-slate-400')}>
                 LLC, S-Corp, C-Corp, bookkeeping, payroll
               </p>
             </div>

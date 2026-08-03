@@ -116,7 +116,7 @@ export default function Pricing() {
                 <div className="mb-7">
                   <span className="text-xs font-bold tracking-widest text-gold uppercase">Advanced Compliance</span>
                   <h2 className="text-2xl font-bold font-sora text-white mt-1.5 mb-2">Tailored Solutions</h2>
-                  <p className="text-blue-200 text-sm">Expert handling of complex business and international tax requirements</p>
+                  <p className="text-indigo-200 text-sm">Expert handling of complex business and international tax requirements</p>
                 </div>
                 <div className="space-y-3 mb-8 flex-1">
                   {[
@@ -127,7 +127,7 @@ export default function Pricing() {
                     { label: 'Bookkeeping / Outsourced CFO', value: 'MONTHLY PKG' },
                   ].map(({ label, value }) => (
                     <div key={label} className="flex items-center justify-between py-2.5 border-b border-white/8 last:border-0">
-                      <span className="text-blue-100 text-sm">{label}</span>
+                      <span className="text-indigo-100 text-sm">{label}</span>
                       <span className="text-gold font-bold text-xs tracking-wider bg-white/10 px-2.5 py-1 rounded-xl">{value}</span>
                     </div>
                   ))}
@@ -135,7 +135,7 @@ export default function Pricing() {
                 <div className="bg-white/8 rounded-2xl p-3.5 mb-7">
                   <div className="flex gap-2">
                     <Star size={13} className="text-gold shrink-0 mt-0.5" aria-hidden="true" />
-                    <p className="text-blue-100 text-xs leading-relaxed">
+                    <p className="text-indigo-100 text-xs leading-relaxed">
                       * All advanced services include a preliminary strategy session to ensure accuracy before official engagement.
                     </p>
                   </div>

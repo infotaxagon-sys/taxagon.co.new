@@ -65,7 +65,7 @@ export default function Bookkeeping() {
                   <div className={`rounded-2xl p-7 border h-full ${i === 1 ? 'bg-indigo-deep border-indigo-deep text-white' : 'bg-white border-slate-200'} shadow-card`}>
                     <h3 className={`font-bold font-sora text-lg mb-1 ${i === 1 ? 'text-white' : 'text-slate-900'}`}>{pkg.label}</h3>
                     <div className={`text-2xl font-bold font-sora mb-3 ${i === 1 ? 'text-amber-gold' : 'text-indigo-deep'}`}>{pkg.price}</div>
-                    <p className={`text-sm leading-relaxed ${i === 1 ? 'text-blue-100' : 'text-slate-500'}`}>{pkg.desc}</p>
+                    <p className={`text-sm leading-relaxed ${i === 1 ? 'text-indigo-100' : 'text-slate-500'}`}>{pkg.desc}</p>
                   </div>
                 </SectionItem>
               ))}
@@ -110,7 +110,7 @@ export default function Bookkeeping() {
       <section className="py-16 bg-indigo-deep">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-sora text-white mb-4">Start Filing with Taxagon</h2>
-          <p className="text-blue-100 mb-8">Clean books, clear financials, and tax-ready records — every month.</p>
+          <p className="text-indigo-100 mb-8">Clean books, clear financials, and tax-ready records — every month.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold px-8 py-4 rounded-xl hover:bg-sky-tint transition-all btn-shine">
             Get a Custom Bookkeeping Quote <ArrowRight size={16} aria-hidden="true" />
           </Link>

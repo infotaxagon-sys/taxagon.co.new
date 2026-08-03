@@ -2,9 +2,9 @@
 
 @theme {
   /* ── Brand Colors ── */
-  --color-navy:          #0F1B4C;
-  --color-navy-dark:     #091030;
-  --color-navy-mid:      #1a2d6e;
+  --color-navy:          #48429C;
+  --color-navy-dark:     #2E2968;
+  --color-navy-mid:      #5D55B2;
   --color-gold:          #D4AF37;
   --color-gold-light:    #F0D060;
   --color-gold-dark:     #A88B1E;
@@ -13,8 +13,8 @@
   --color-warm-tint:     #F3EFE5;
 
   /* Keep legacy names pointing to new palette for zero component changes */
-  --color-indigo-deep:      #0F1B4C;
-  --color-indigo-deep-dark: #091030;
+  --color-indigo-deep:      #48429C;
+  --color-indigo-deep-dark: #2E2968;
   --color-blue-electric:    #D4AF37;
   --color-sky-tint:         #F3EFE5;
   --color-sky-tint-dark:    #EDE9E0;
@@ -27,8 +27,8 @@
   --font-family-jakarta: 'Plus Jakarta Sans', sans-serif;
 
   /* Shadows */
-  --shadow-brand: 0 20px 60px -20px rgba(15, 27, 76, 0.30);
-  --shadow-card:  0 4px 28px -4px rgba(15, 27, 76, 0.10);
+  --shadow-brand: 0 20px 60px -20px rgba(72, 66, 156, 0.30);
+  --shadow-card:  0 4px 28px -4px rgba(72, 66, 156, 0.10);
   --shadow-glow:  0 0 40px rgba(212, 175, 55, 0.25);
 
   /* Border radii */
@@ -89,7 +89,7 @@ body  {
 
 /* ── Gradient text ── */
 .gradient-text {
-  background: linear-gradient(135deg, #0F1B4C 0%, #D4AF37 100%);
+  background: linear-gradient(135deg, #48429C 0%, #D4AF37 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -112,14 +112,14 @@ body  {
   background: rgba(248, 247, 244, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(15, 27, 76, 0.08);
+  border-bottom: 1px solid rgba(72, 66, 156, 0.08);
 }
 
 /* ── Animated border (gold conic) ── */
 .animated-border {
   background:
-    linear-gradient(#0F1B4C, #0F1B4C) padding-box,
-    conic-gradient(from var(--border-angle), #0F1B4C, #D4AF37, #F0D060, #D4AF37, #0F1B4C) border-box;
+    linear-gradient(#48429C, #48429C) padding-box,
+    conic-gradient(from var(--border-angle), #48429C, #D4AF37, #F0D060, #D4AF37, #48429C) border-box;
   border: 2px solid transparent;
   animation: border-spin 4s linear infinite;
 }
@@ -141,10 +141,10 @@ body  {
 .mesh-bg {
   background-color: #F3EFE5;
   background-image:
-    radial-gradient(at 15% 20%, rgba(15, 27, 76, 0.09) 0px, transparent 50%),
+    radial-gradient(at 15% 20%, rgba(72, 66, 156, 0.09) 0px, transparent 50%),
     radial-gradient(at 85% 5%,  rgba(212, 175, 55, 0.14) 0px, transparent 50%),
     radial-gradient(at 0% 65%,  rgba(212, 175, 55, 0.06) 0px, transparent 50%),
-    radial-gradient(at 90% 65%, rgba(15, 27, 76, 0.06)  0px, transparent 50%),
+    radial-gradient(at 90% 65%, rgba(72, 66, 156, 0.06)  0px, transparent 50%),
     radial-gradient(at 40% 95%, rgba(212, 175, 55, 0.07) 0px, transparent 50%);
 }
 
@@ -166,7 +166,7 @@ body  {
 /* ── Scrollbar ── */
 ::-webkit-scrollbar       { width: 6px; }
 ::-webkit-scrollbar-track { background: #EDE9E0; }
-::-webkit-scrollbar-thumb { background: #0F1B4C; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #48429C; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
 
 /* ── Focus ring ── */

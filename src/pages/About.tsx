@@ -79,7 +79,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold font-sora text-white mb-5 leading-tight">
               Build lasting legacies of wealth and opportunity
             </h2>
-            <p className="text-blue-100 leading-relaxed text-lg">
+            <p className="text-indigo-100 leading-relaxed text-lg">
               At Taxagon, we're building products and services to help you invest not just in yourself but also in your communities — all towards building lasting legacies of wealth and opportunity.
             </p>
           </motion.div>

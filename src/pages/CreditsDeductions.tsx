@@ -15,7 +15,7 @@ const INFO_FOR = [
     label: 'Individuals',
     description: 'For you and your family',
     badge: 'Personal',
-    badgeColor: 'text-blue-600 bg-blue-50',
+    badgeColor: 'text-indigo-600 bg-indigo-50',
     href: `${BASE}/credits-and-deductions-for-individuals`,
   },
   {
@@ -301,7 +301,7 @@ export default function CreditsDeductions() {
                 <h2 className="text-2xl font-bold font-sora text-white mb-3">
                   Let Taxagon Maximize Your Deductions
                 </h2>
-                <p className="text-blue-200 text-sm mb-7 max-w-lg mx-auto">
+                <p className="text-indigo-200 text-sm mb-7 max-w-lg mx-auto">
                   Our CPAs identify every credit and deduction you qualify for — from EITC to clean energy credits to business deductions.
                 </p>
                 <a

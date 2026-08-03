@@ -109,7 +109,7 @@ export default function Passport() {
       <section className="py-16 bg-indigo-deep">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-sora text-white mb-4">Start Filing with Taxagon</h2>
-          <p className="text-blue-100 mb-8">NRI consular assistance — handled professionally so you can focus on what matters.</p>
+          <p className="text-indigo-100 mb-8">NRI consular assistance — handled professionally so you can focus on what matters.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold px-8 py-4 rounded-xl hover:bg-sky-tint transition-all btn-shine">
             Get Consular Support <ArrowRight size={16} aria-hidden="true" />
           </Link>

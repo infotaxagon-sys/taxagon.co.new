@@ -146,7 +146,7 @@ export default function Individual() {
       <section className="py-16 bg-indigo-deep" aria-label="Call to action">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-sora text-white mb-4">Start Filing with Taxagon</h2>
-          <p className="text-blue-100 mb-8">Secure, professional individual tax filing from $89. No hidden fees.</p>
+          <p className="text-indigo-100 mb-8">Secure, professional individual tax filing from $89. No hidden fees.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold px-8 py-4 rounded-xl hover:bg-sky-tint transition-all btn-shine">
             Get Started Today <ArrowRight size={16} aria-hidden="true" />
           </Link>
