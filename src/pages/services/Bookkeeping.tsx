@@ -25,7 +25,7 @@ const WHY = [
 ]
 
 const PACKAGES = [
-  { label: 'Starter', price: 'From $299/mo', desc: 'Up to 100 transactions · Monthly reconciliation · P&L + Balance Sheet' },
+  { label: 'Starter', price: 'From $199/mo', desc: 'Up to 100 transactions · Monthly reconciliation · P&L + Balance Sheet' },
   { label: 'Growth', price: 'From $499/mo', desc: 'Up to 300 transactions · AP/AR tracking · Payroll coordination' },
   { label: 'CFO+', price: 'Custom', desc: 'Unlimited transactions · Forecasting · Board-ready reports · CFO advisory' },
 ]

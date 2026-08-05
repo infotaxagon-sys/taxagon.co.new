@@ -75,7 +75,7 @@ export default function TestimonialCarousel({ dark = false }: Props) {
             </blockquote>
 
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gold text-navy flex items-center justify-center font-bold text-sm font-sora shrink-0">
+              <div className="w-10 h-10 rounded-full bg-gold text-ink flex items-center justify-center font-bold text-sm font-sora shrink-0">
                 {t.initials}
               </div>
               <div>

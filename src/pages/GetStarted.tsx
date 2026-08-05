@@ -153,7 +153,7 @@ function StepIndicator({ current }: { current: number }) {
             </div>
             <span className={cn(
               'text-xs mt-1.5 font-medium whitespace-nowrap hidden sm:block',
-              current === step.num ? 'text-navy' : 'text-slate-400'
+              current === step.num ? 'text-ink' : 'text-slate-400'
             )}>
               {step.label}
             </span>
@@ -314,7 +314,7 @@ function IndividualForm({ onSubmit, onBack }: { onSubmit: (d: IndividualData) =>
             return (
               <label key={fs.value} className={cn(
                 'flex items-center gap-3 px-4 py-3 rounded-xl border-2 cursor-pointer transition-all text-sm font-medium',
-                checked ? 'border-navy bg-navy/5 text-navy' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30'
+                checked ? 'border-navy bg-navy/5 text-ink' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30'
               )}>
                 <input type="radio" {...register('filingStatus')} value={fs.value} className="sr-only" />
                 <span className={cn('w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0', checked ? 'border-navy' : 'border-slate-300')}>
@@ -335,7 +335,7 @@ function IndividualForm({ onSubmit, onBack }: { onSubmit: (d: IndividualData) =>
             return (
               <button key={value} type="button" onClick={() => toggle(value)} className={cn(
                 'flex items-center gap-3 px-4 py-3 rounded-xl border-2 transition-all text-sm font-medium text-left',
-                checked ? 'border-navy bg-navy/5 text-navy' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30 hover:bg-parchment'
+                checked ? 'border-navy bg-navy/5 text-ink' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30 hover:bg-parchment'
               )}>
                 <div className={cn('w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-all', checked ? 'bg-navy text-white' : 'bg-parchment text-slate-400')}>
                   <Icon size={13} />
@@ -394,7 +394,7 @@ function BusinessForm({ onSubmit, onBack }: { onSubmit: (d: BusinessData) => voi
             return (
               <label key={e.value} className={cn(
                 'flex items-center gap-2.5 px-3.5 py-3 rounded-xl border-2 cursor-pointer transition-all text-sm font-medium',
-                checked ? 'border-navy bg-navy/5 text-navy' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30'
+                checked ? 'border-navy bg-navy/5 text-ink' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30'
               )}>
                 <input type="radio" {...register('entityType')} value={e.value} className="sr-only" />
                 <span className={cn('w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center shrink-0', checked ? 'border-navy' : 'border-slate-300')}>
@@ -457,7 +457,7 @@ function BusinessForm({ onSubmit, onBack }: { onSubmit: (d: BusinessData) => voi
             return (
               <button key={value} type="button" onClick={() => toggleService(value)} className={cn(
                 'flex items-center gap-3 px-4 py-3 rounded-xl border-2 transition-all text-sm font-medium text-left',
-                checked ? 'border-navy bg-navy/5 text-navy' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30 hover:bg-parchment'
+                checked ? 'border-navy bg-navy/5 text-ink' : 'border-parchment-dark bg-white text-slate-600 hover:border-navy/30 hover:bg-parchment'
               )}>
                 <div className={cn('w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-all', checked ? 'bg-navy text-white' : 'bg-parchment text-slate-400')}>
                   <Icon size={13} />
@@ -539,7 +539,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
               'w-12 h-12 rounded-2xl flex items-center justify-center transition-all',
               filingType === 'individual' ? 'bg-white/15' : 'bg-parchment group-hover:bg-warm-tint'
             )}>
-              <User size={22} className={filingType === 'individual' ? 'text-gold' : 'text-navy'} />
+              <User size={22} className={filingType === 'individual' ? 'text-gold' : 'text-ink'} />
             </div>
             <div>
               <p className="font-bold text-sm font-sora">Individual</p>
@@ -553,7 +553,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
                 animate={{ scale: 1 }}
                 className="absolute top-3 right-3 w-5 h-5 rounded-full bg-gold flex items-center justify-center"
               >
-                <CheckCircle2 size={12} className="text-navy" />
+                <CheckCircle2 size={12} className="text-ink" />
               </motion.div>
             )}
           </button>
@@ -573,7 +573,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
               'w-12 h-12 rounded-2xl flex items-center justify-center transition-all',
               filingType === 'business' ? 'bg-white/15' : 'bg-parchment group-hover:bg-warm-tint'
             )}>
-              <Building2 size={22} className={filingType === 'business' ? 'text-gold' : 'text-navy'} />
+              <Building2 size={22} className={filingType === 'business' ? 'text-gold' : 'text-ink'} />
             </div>
             <div>
               <p className="font-bold text-sm font-sora">Business</p>
@@ -587,7 +587,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
                 animate={{ scale: 1 }}
                 className="absolute top-3 right-3 w-5 h-5 rounded-full bg-gold flex items-center justify-center"
               >
-                <CheckCircle2 size={12} className="text-navy" />
+                <CheckCircle2 size={12} className="text-ink" />
               </motion.div>
             )}
           </button>
@@ -610,7 +610,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
                 <User size={14} className="text-gold" />
               </div>
               <div>
-                <p className="text-sm font-bold text-navy">Individual Filing</p>
+                <p className="text-sm font-bold text-ink">Individual Filing</p>
                 <p className="text-xs text-slate-400">Tell us about your personal income and tax situation</p>
               </div>
             </div>
@@ -632,7 +632,7 @@ function Step2({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
                 <Building2 size={14} className="text-gold" />
               </div>
               <div>
-                <p className="text-sm font-bold text-navy">Business Filing</p>
+                <p className="text-sm font-bold text-ink">Business Filing</p>
                 <p className="text-xs text-slate-400">Tell us about your business structure and needs</p>
               </div>
             </div>
@@ -687,13 +687,13 @@ function Step3({ firstName }: { firstName: string }) {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-        <h2 className="text-2xl sm:text-3xl font-bold font-sora text-navy mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold font-sora text-ink mb-3">
           Thank you, {firstName}! 🎉
         </h2>
         <p className="text-slate-600 text-base leading-relaxed mb-8 max-w-md mx-auto">
           We've received your details. A member of the Taxagon team will review your profile and send you a{' '}
-          <strong className="text-navy">Client Portal invite</strong>{' '}
-          to your email within <strong className="text-navy">24 hours</strong>.
+          <strong className="text-ink">Client Portal invite</strong>{' '}
+          to your email within <strong className="text-ink">24 hours</strong>.
         </p>
 
         <div className="bg-parchment rounded-3xl p-6 mb-8 text-left max-w-sm mx-auto">
@@ -724,7 +724,7 @@ function Step3({ firstName }: { firstName: string }) {
           <Link to="/" className="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-bold px-8 py-3.5 rounded-xl transition-all btn-shine text-sm">
             Back to Home
           </Link>
-          <Link to="/pricing" className="inline-flex items-center justify-center gap-2 border-2 border-navy/20 text-navy hover:bg-warm-tint font-semibold px-8 py-3.5 rounded-xl transition-all text-sm">
+          <Link to="/pricing" className="inline-flex items-center justify-center gap-2 border-2 border-navy/20 text-ink hover:bg-warm-tint font-semibold px-8 py-3.5 rounded-xl transition-all text-sm">
             View Pricing
           </Link>
         </div>
@@ -767,7 +767,7 @@ export default function GetStarted() {
             Get Started
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl font-bold font-sora text-navy leading-tight mb-3">
+            className="text-3xl sm:text-4xl font-bold font-sora text-ink leading-tight mb-3">
             Let's Build Your{' '}
             <em className="not-italic text-gold">Tax Strategy</em>
           </motion.h1>
@@ -797,7 +797,7 @@ export default function GetStarted() {
               {step === 1 && (
                 <>
                   <div className="mb-7">
-                    <h2 className="text-xl font-bold font-sora text-navy mb-1">Personal Details</h2>
+                    <h2 className="text-xl font-bold font-sora text-ink mb-1">Personal Details</h2>
                     <p className="text-slate-500 text-sm">Tell us about yourself so we can set up your account.</p>
                   </div>
                   <Step1 onNext={(data) => { setStep1Data(data); goTo(2) }} />
@@ -807,7 +807,7 @@ export default function GetStarted() {
               {step === 2 && (
                 <>
                   <div className="mb-7">
-                    <h2 className="text-xl font-bold font-sora text-navy mb-1">Your Tax Profile</h2>
+                    <h2 className="text-xl font-bold font-sora text-ink mb-1">Your Tax Profile</h2>
                     <p className="text-slate-500 text-sm">Help us understand your tax situation so we can match you with the right CPA.</p>
                   </div>
                   <Step2 onNext={() => goTo(3)} onBack={() => goTo(1)} />

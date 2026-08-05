@@ -120,7 +120,7 @@ function HeroSection() {
         {/* Badge */}
         <motion.div
           {...riseProps(reduce, 0)}
-          className="inline-flex items-center gap-2 bg-white/80 backdrop-blur border border-navy/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-navy mb-7 shadow-sm"
+          className="inline-flex items-center gap-2 bg-white/80 backdrop-blur border border-navy/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-ink mb-7 shadow-sm"
         >
           <CheckCircle2 size={13} className="text-green-success" aria-hidden="true" />
           IRS-registered · Austin, TX · 2,500+ returns filed
@@ -129,7 +129,7 @@ function HeroSection() {
         {/* Full-width headline */}
         <motion.h1
           {...riseProps(reduce, 0.08)}
-          className="font-sora font-bold text-navy tracking-tight leading-[1.03] text-[clamp(2.5rem,6vw,4.5rem)] text-balance"
+          className="font-sora font-bold text-ink tracking-tight leading-[1.03] text-[clamp(2.5rem,6vw,4.5rem)] text-balance"
         >
           <span className="block">File with confidence.</span>
           <span className="relative inline-block mt-1">
@@ -165,7 +165,7 @@ function HeroSection() {
               </Link>
               <Link
                 to="/pricing"
-                className="inline-flex items-center justify-center gap-2 bg-white border border-navy/15 hover:border-gold text-navy font-semibold px-7 py-4 rounded-full transition-colors shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white border border-navy/15 hover:border-gold text-ink font-semibold px-7 py-4 rounded-full transition-colors shadow-sm"
               >
                 See pricing
               </Link>
@@ -173,8 +173,8 @@ function HeroSection() {
 
             {/* Trust / low-friction cues */}
             <motion.div {...riseProps(reduce, 0.3)} className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-6 text-xs text-slate-500">
-              <span className="inline-flex items-center gap-1.5"><Lock size={13} className="text-navy" aria-hidden="true" /> Bank-level 256-bit encryption</span>
-              <span className="inline-flex items-center gap-1.5"><Shield size={13} className="text-navy" aria-hidden="true" /> No payment until you approve</span>
+              <span className="inline-flex items-center gap-1.5"><Lock size={13} className="text-ink" aria-hidden="true" /> Bank-level 256-bit encryption</span>
+              <span className="inline-flex items-center gap-1.5"><Shield size={13} className="text-ink" aria-hidden="true" /> No payment until you approve</span>
             </motion.div>
 
             {/* Social proof row */}
@@ -193,7 +193,7 @@ function HeroSection() {
                   {[1, 2, 3, 4, 5].map(i => (
                     <Star key={i} size={13} className="fill-gold text-gold" aria-hidden="true" />
                   ))}
-                  <span className="text-navy font-bold text-sm ml-1">5.0</span>
+                  <span className="text-ink font-bold text-sm ml-1">5.0</span>
                 </div>
                 <p className="text-slate-500 text-xs mt-0.5">Google-verified across 2,500+ clients</p>
               </div>
@@ -230,7 +230,7 @@ function HeroSection() {
               <div className="flex items-center justify-between mb-6" style={reduce ? undefined : { transform: 'translateZ(30px)' }}>
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">2024 Return</p>
-                  <p className="font-sora font-bold text-navy text-lg leading-tight">Federal + State</p>
+                  <p className="font-sora font-bold text-ink text-lg leading-tight">Federal + State</p>
                 </div>
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-dark bg-gold/12 rounded-full px-3 py-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-gold-dark animate-pulse" /> In review
@@ -241,7 +241,7 @@ function HeroSection() {
               <div className="rounded-2xl bg-parchment p-4 mb-4" style={reduce ? undefined : { transform: 'translateZ(24px)' }}>
                 <p className="text-xs text-slate-500 mb-1">Estimated refund</p>
                 <div className="flex items-end gap-2 flex-wrap">
-                  <span className="font-sora font-bold text-navy text-3xl tracking-tight tabular-nums">
+                  <span className="font-sora font-bold text-ink text-3xl tracking-tight tabular-nums">
                     <CountUp value={4820} prefix="$" />
                   </span>
                   <span className="inline-flex items-center gap-1 text-green-success text-xs font-semibold mb-1.5">
@@ -278,7 +278,7 @@ function HeroSection() {
 
               <div className="flex items-center gap-2.5 mt-6 pt-5 border-t border-parchment-dark">
                 <div className="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-[11px] font-bold text-white">CP</div>
-                <p className="text-xs text-slate-500">Reviewed by a <span className="font-semibold text-navy">licensed CPA</span></p>
+                <p className="text-xs text-slate-500">Reviewed by a <span className="font-semibold text-ink">licensed CPA</span></p>
                 <BadgeCheck size={16} className="text-gold-dark ml-auto" aria-hidden="true" />
               </div>
             </motion.div>
@@ -315,7 +315,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <Section>
             <SectionItem className="max-w-2xl mb-14">
-              <h2 className="font-sora font-bold text-navy text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
+              <h2 className="font-sora font-bold text-ink text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
                 One team for every corner of your taxes
               </h2>
               <p className="text-slate-600 text-lg mt-5 leading-relaxed text-pretty">
@@ -331,7 +331,7 @@ export default function Home() {
                 <div aria-hidden="true" className="absolute -left-10 -bottom-24 w-72 h-72 rounded-full bg-white/5 blur-3xl" />
                 <div className="relative grid lg:grid-cols-[1.4fr_1fr] gap-8 p-8 sm:p-10 lg:p-12 items-center">
                   <div>
-                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-navy bg-gold rounded-full px-3 py-1 mb-5">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink bg-gold rounded-full px-3 py-1 mb-5">
                       {CROSS_BORDER.tag}
                     </span>
                     <h3 className="font-sora font-bold text-3xl sm:text-4xl mb-4 leading-[1.1] text-balance">{CROSS_BORDER.title}</h3>
@@ -366,9 +366,9 @@ export default function Home() {
                       className="group h-full rounded-4xl bg-white border border-parchment-dark p-6 hover:border-gold/40 hover:shadow-card transition-colors"
                     >
                       <div className="w-11 h-11 rounded-2xl bg-parchment group-hover:bg-navy flex items-center justify-center mb-4 transition-colors">
-                        <Icon size={19} className="text-navy group-hover:text-white transition-colors" aria-hidden="true" />
+                        <Icon size={19} className="text-ink group-hover:text-white transition-colors" aria-hidden="true" />
                       </div>
-                      <h3 className="font-sora font-bold text-navy mb-1.5">{cap.title}</h3>
+                      <h3 className="font-sora font-bold text-ink mb-1.5">{cap.title}</h3>
                       <p className="text-slate-500 text-sm leading-relaxed">{cap.desc}</p>
                     </motion.div>
                   </SectionItem>
@@ -386,7 +386,7 @@ export default function Home() {
             <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-12 lg:gap-16 items-start">
               <SectionItem className="md:sticky md:top-28">
                 <p className="text-sm font-semibold text-gold-dark mb-3">How it works</p>
-                <h2 className="font-sora font-bold text-navy text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
+                <h2 className="font-sora font-bold text-ink text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
                   From shoebox to filed in three steps
                 </h2>
                 <p className="text-slate-600 text-lg mt-5 leading-relaxed text-pretty">
@@ -401,11 +401,11 @@ export default function Home() {
 
                 {/* Avg. turnaround stat — concrete proof, not decoration */}
                 <div className="hidden md:flex items-center gap-5 mt-10 rounded-3xl bg-parchment border border-parchment-dark p-6">
-                  <div className="font-sora font-bold text-navy text-5xl tracking-tight tabular-nums leading-none">
+                  <div className="font-sora font-bold text-ink text-5xl tracking-tight tabular-nums leading-none">
                     48<span className="text-2xl text-gold-dark">hrs</span>
                   </div>
                   <div className="border-l border-parchment-dark pl-5">
-                    <p className="font-semibold text-navy text-sm">Average draft turnaround</p>
+                    <p className="font-semibold text-ink text-sm">Average draft turnaround</p>
                     <p className="text-slate-500 text-sm mt-0.5">from upload to a return ready for your review</p>
                   </div>
                 </div>
@@ -418,13 +418,13 @@ export default function Home() {
                     <SectionItem key={step.n}>
                       <div className="group flex gap-5 sm:gap-6 rounded-3xl border border-parchment-dark p-6 sm:p-7 hover:border-navy/20 hover:bg-parchment/50 transition-colors">
                         <div className="shrink-0 flex flex-col items-center">
-                          <span className="font-sora font-bold text-navy/25 text-2xl tabular-nums">{step.n}</span>
+                          <span className="font-sora font-bold text-ink/20 text-2xl tabular-nums">{step.n}</span>
                           <div className="w-11 h-11 mt-3 rounded-2xl bg-navy group-hover:bg-gold flex items-center justify-center transition-colors">
                             <Icon size={19} className="text-white group-hover:text-navy transition-colors" aria-hidden="true" />
                           </div>
                         </div>
                         <div className="pt-1">
-                          <h3 className="font-sora font-bold text-navy text-xl mb-2">{step.title}</h3>
+                          <h3 className="font-sora font-bold text-ink text-xl mb-2">{step.title}</h3>
                           <p className="text-slate-500 leading-relaxed">{step.desc}</p>
                         </div>
                       </div>
@@ -456,7 +456,7 @@ export default function Home() {
                       <BadgeCheck size={20} className="text-gold" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-sora font-bold text-navy leading-tight text-sm">Licensed CPAs & EAs</p>
+                      <p className="font-sora font-bold text-ink leading-tight text-sm">Licensed CPAs & EAs</p>
                       <p className="text-xs text-slate-500">on every return</p>
                     </div>
                   </div>
@@ -464,7 +464,7 @@ export default function Home() {
               </SectionItem>
 
               <SectionItem>
-                <h2 className="font-sora font-bold text-navy text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
+                <h2 className="font-sora font-bold text-ink text-4xl md:text-5xl leading-[1.08] tracking-tight text-balance">
                   Real preparers behind every return
                 </h2>
                 <p className="text-slate-600 text-lg mt-5 leading-relaxed text-pretty">
@@ -487,7 +487,7 @@ export default function Home() {
                 </ul>
                 <Link
                   to="/about"
-                  className="inline-flex items-center gap-1.5 text-navy font-semibold mt-8 hover:text-gold-dark transition-colors"
+                  className="inline-flex items-center gap-1.5 text-ink font-semibold mt-8 hover:text-gold-dark transition-colors"
                 >
                   Meet the team <ArrowRight size={15} aria-hidden="true" />
                 </Link>
@@ -539,12 +539,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <Section>
             <SectionItem className="flex flex-wrap items-end justify-between gap-4 mb-12">
-              <h2 className="font-sora font-bold text-navy text-3xl md:text-4xl leading-tight tracking-tight max-w-md text-balance">
+              <h2 className="font-sora font-bold text-ink text-3xl md:text-4xl leading-tight tracking-tight max-w-md text-balance">
                 Official tax tools, one click away
               </h2>
               <Link
                 to="/tax-tools"
-                className="inline-flex items-center gap-1.5 text-navy font-semibold hover:text-gold-dark transition-colors"
+                className="inline-flex items-center gap-1.5 text-ink font-semibold hover:text-gold-dark transition-colors"
               >
                 Full tax tools center <ArrowRight size={15} aria-hidden="true" />
               </Link>
@@ -564,14 +564,14 @@ export default function Home() {
                   >
                     <div className="flex items-start justify-between">
                       <div className="w-11 h-11 rounded-2xl bg-parchment group-hover:bg-navy flex items-center justify-center transition-colors">
-                        <Icon size={18} className="text-navy group-hover:text-white transition-colors" aria-hidden="true" />
+                        <Icon size={18} className="text-ink group-hover:text-white transition-colors" aria-hidden="true" />
                       </div>
                       <span className="inline-flex items-center gap-1 text-xs bg-green-success/10 text-green-success font-semibold px-2.5 py-0.5 rounded-full">
                         <Shield size={11} aria-hidden="true" /> {badge}
                       </span>
                     </div>
                     <div>
-                      <h3 className="font-sora font-bold text-navy mb-1.5 group-hover:text-gold-dark transition-colors flex items-center gap-1.5">
+                      <h3 className="font-sora font-bold text-ink mb-1.5 group-hover:text-gold-dark transition-colors flex items-center gap-1.5">
                         {title} <ExternalLink size={13} className="opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
                       </h3>
                       <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
@@ -603,7 +603,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     to="/get-started"
-                    className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-bold px-9 py-4 rounded-full transition-colors btn-shine"
+                    className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-ink font-bold px-9 py-4 rounded-full transition-colors btn-shine"
                   >
                     Start your return <ArrowRight size={16} aria-hidden="true" />
                   </Link>
@@ -624,7 +624,7 @@ export default function Home() {
       <section className="py-20 bg-parchment border-t border-parchment-dark" aria-label="Newsletter">
         <div className="max-w-4xl mx-auto px-6 grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
-            <h2 className="font-sora font-bold text-navy text-2xl md:text-3xl mb-2">Stay ahead of tax season</h2>
+            <h2 className="font-sora font-bold text-ink text-2xl md:text-3xl mb-2">Stay ahead of tax season</h2>
             <p className="text-slate-500 leading-relaxed">Deadline reminders and savings strategies — a few times a year, never spam.</p>
           </div>
           <form
@@ -653,7 +653,7 @@ export default function Home() {
       <section className="py-8 bg-navy/5 border-t border-parchment-dark" aria-label="Client portal">
         <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Lock size={16} className="text-navy" aria-hidden="true" />
+            <Lock size={16} className="text-ink" aria-hidden="true" />
             <p className="text-slate-600 text-sm">Existing client? Access your documents and returns.</p>
           </div>
           <a

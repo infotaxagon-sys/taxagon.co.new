@@ -2,22 +2,23 @@
 
 @theme {
   /* ── Brand Colors ── */
-  --color-navy:          #48429C;
-  --color-navy-dark:     #2E2968;
-  --color-navy-mid:      #5D55B2;
+  --color-navy:          #2C3AFD;
+  --color-navy-dark:     #1C28C7;
+  --color-navy-mid:      #5A65FE;
+  --color-ink:           #111827;
   --color-gold:          #D4AF37;
   --color-gold-light:    #F0D060;
   --color-gold-dark:     #A88B1E;
-  --color-parchment:     #F8F7F4;
-  --color-parchment-dark:#EDE9E0;
-  --color-warm-tint:     #F3EFE5;
+  --color-parchment:     #F7F9FC;
+  --color-parchment-dark:#E6EAF2;
+  --color-warm-tint:     #F2F5FA;
 
   /* Keep legacy names pointing to new palette for zero component changes */
-  --color-indigo-deep:      #48429C;
-  --color-indigo-deep-dark: #2E2968;
+  --color-indigo-deep:      #2C3AFD;
+  --color-indigo-deep-dark: #1C28C7;
   --color-blue-electric:    #D4AF37;
-  --color-sky-tint:         #F3EFE5;
-  --color-sky-tint-dark:    #EDE9E0;
+  --color-sky-tint:         #F2F5FA;
+  --color-sky-tint-dark:    #E6EAF2;
   --color-amber-gold:       #D4AF37;
   --color-green-success:    #22C55E;
 
@@ -27,8 +28,8 @@
   --font-family-jakarta: 'Plus Jakarta Sans', sans-serif;
 
   /* Shadows */
-  --shadow-brand: 0 20px 60px -20px rgba(72, 66, 156, 0.30);
-  --shadow-card:  0 4px 28px -4px rgba(72, 66, 156, 0.10);
+  --shadow-brand: 0 20px 60px -20px rgba(44, 58, 253, 0.30);
+  --shadow-card:  0 4px 28px -4px rgba(44, 58, 253, 0.10);
   --shadow-glow:  0 0 40px rgba(212, 175, 55, 0.25);
 
   /* Border radii */
@@ -78,7 +79,7 @@
 html  { scroll-behavior: smooth; }
 body  {
   font-family: 'Inter', sans-serif;
-  background-color: #F8F7F4;
+  background-color: #FFFFFF;
   color: #1a1a2e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,20 +87,6 @@ body  {
   margin: 0;
 }
 #root { min-height: 100vh; }
-
-/* ── Gradient text ── */
-.gradient-text {
-  background: linear-gradient(135deg, #48429C 0%, #D4AF37 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.gradient-text-gold {
-  background: linear-gradient(135deg, #D4AF37 0%, #F0D060 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 /* ── Glassmorphism ── */
 .glass-card {
@@ -109,17 +96,17 @@ body  {
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
 .glass-header {
-  background: rgba(248, 247, 244, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(72, 66, 156, 0.08);
+  border-bottom: 1px solid rgba(44, 58, 253, 0.08);
 }
 
 /* ── Animated border (gold conic) ── */
 .animated-border {
   background:
-    linear-gradient(#48429C, #48429C) padding-box,
-    conic-gradient(from var(--border-angle), #48429C, #D4AF37, #F0D060, #D4AF37, #48429C) border-box;
+    linear-gradient(#2C3AFD, #2C3AFD) padding-box,
+    conic-gradient(from var(--border-angle), #2C3AFD, #D4AF37, #F0D060, #D4AF37, #2C3AFD) border-box;
   border: 2px solid transparent;
   animation: border-spin 4s linear infinite;
 }
@@ -139,12 +126,12 @@ body  {
 
 /* ── Mesh / hero bg ── */
 .mesh-bg {
-  background-color: #F3EFE5;
+  background-color: #FFFFFF;
   background-image:
-    radial-gradient(at 15% 20%, rgba(72, 66, 156, 0.09) 0px, transparent 50%),
+    radial-gradient(at 15% 20%, rgba(44, 58, 253, 0.09) 0px, transparent 50%),
     radial-gradient(at 85% 5%,  rgba(212, 175, 55, 0.14) 0px, transparent 50%),
     radial-gradient(at 0% 65%,  rgba(212, 175, 55, 0.06) 0px, transparent 50%),
-    radial-gradient(at 90% 65%, rgba(72, 66, 156, 0.06)  0px, transparent 50%),
+    radial-gradient(at 90% 65%, rgba(44, 58, 253, 0.06)  0px, transparent 50%),
     radial-gradient(at 40% 95%, rgba(212, 175, 55, 0.07) 0px, transparent 50%);
 }
 
@@ -165,8 +152,8 @@ body  {
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar       { width: 6px; }
-::-webkit-scrollbar-track { background: #EDE9E0; }
-::-webkit-scrollbar-thumb { background: #48429C; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #E6EAF2; }
+::-webkit-scrollbar-thumb { background: #2C3AFD; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
 
 /* ── Focus ring ── */

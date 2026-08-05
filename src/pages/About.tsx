@@ -22,7 +22,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold font-sora text-navy leading-[1.08] mb-6"
+            className="text-5xl md:text-6xl font-bold font-sora text-ink leading-[1.08] mb-6"
           >
             Expert Tax Representation{' '}
             <em className="not-italic text-gold">You Can Trust</em>
@@ -34,7 +34,7 @@ export default function About() {
             className="text-slate-600 text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
           >
             Headquartered in Austin, Texas, Taxagon provides comprehensive tax compliance and strategic planning for{' '}
-            <strong className="text-navy">
+            <strong className="text-ink">
               <AnimatedCounter to={2500} suffix="+" /> clients
             </strong>{' '}
             across the United States and overseas.
@@ -53,7 +53,7 @@ export default function About() {
               { val: 50, suf: '+', label: 'States Covered' },
             ].map(({ val, suf, label }) => (
               <div key={label} className="text-center px-3">
-                <div className="text-2xl font-bold font-sora text-navy">
+                <div className="text-2xl font-bold font-sora text-ink">
                   <AnimatedCounter to={val} suffix={suf} />
                 </div>
                 <div className="text-xs text-slate-500 mt-0.5">{label}</div>
@@ -92,7 +92,7 @@ export default function About() {
           <Section>
             <SectionItem className="text-center mb-14">
               <p className="text-xs font-bold tracking-widest text-gold uppercase mb-4">What You Get</p>
-              <h2 className="text-4xl font-bold font-sora text-navy">
+              <h2 className="text-4xl font-bold font-sora text-ink">
                 Benefits with <em className="not-italic text-gold">Taxagon</em>
               </h2>
             </SectionItem>
@@ -119,7 +119,7 @@ export default function About() {
           <Section className="grid md:grid-cols-2 gap-14 items-start">
             <SectionItem>
               <p className="text-xs font-bold tracking-widest text-gold uppercase mb-4">Our Mission</p>
-              <h2 className="text-3xl font-bold font-sora text-navy mb-5 leading-tight">
+              <h2 className="text-3xl font-bold font-sora text-ink mb-5 leading-tight">
                 Precision, Compliance, and Proactive Strategy
               </h2>
               <blockquote className="pull-quote">
@@ -135,7 +135,7 @@ export default function About() {
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-2 bg-white border border-parchment-dark rounded-2xl px-4 py-2.5 shadow-sm">
                     <Icon size={15} className="text-gold" aria-hidden="true" />
-                    <span className="font-semibold text-navy text-sm">{label}</span>
+                    <span className="font-semibold text-ink text-sm">{label}</span>
                   </div>
                 ))}
               </div>
@@ -158,7 +158,7 @@ export default function About() {
                 </div>
                 <Link
                   to="/contact"
-                  className="w-full flex items-center justify-center gap-2 bg-gold text-navy font-bold py-3.5 rounded-full hover:bg-gold-light transition-colors text-sm btn-shine"
+                  className="w-full flex items-center justify-center gap-2 bg-gold text-ink font-bold py-3.5 rounded-full hover:bg-gold-light transition-colors text-sm btn-shine"
                 >
                   Contact Our Team
                   <ArrowRight size={14} aria-hidden="true" />

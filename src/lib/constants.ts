@@ -218,7 +218,7 @@ export const ABOUT_BENEFITS = [
 ]
 
 export const PRICING_TABLE = [
-  { service: 'Simple Federal + State Individual Return', basis: 'Starts at $89' },
+  { service: 'Simple Federal + State Individual Return', basis: 'Starts at $99' },
   { service: 'Multi-State Return', basis: 'Based on complexity' },
   { service: '1099 / Self-Employment Return', basis: 'Based on forms' },
   { service: 'Stock / RSU / Crypto Reporting', basis: 'Based on transaction volume' },
@@ -227,5 +227,5 @@ export const PRICING_TABLE = [
   { service: 'FBAR Filing', basis: 'Based on account count' },
   { service: 'FATCA / Form 8938', basis: 'Based on asset details' },
   { service: 'Business Return — 1065 / 1120S / 1120', basis: 'Based on entity and books' },
-  { service: 'Bookkeeping / Outsourced CFO', basis: 'Monthly package available' },
+  { service: 'Bookkeeping / Outsourced CFO', basis: 'Starts at $199/mo' },
 ]

@@ -94,11 +94,11 @@ export default function Individual() {
               <div className="bg-sky-tint border border-indigo-deep/15 rounded-3xl p-8 sticky top-28">
                 <h3 className="text-xl font-bold font-sora text-slate-900 mb-2">Pricing & Value</h3>
                 <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold font-sora text-indigo-deep">$89</span>
+                  <span className="text-4xl font-bold font-sora text-indigo-deep">$99</span>
                   <span className="text-slate-500 text-sm">starting price</span>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  Start your individual tax filing today. Pricing starts at $89 for simple federal + state filing. Final pricing depends on your tax situation, number of forms, states, schedules, and complexity.
+                  Start your individual tax filing today. Pricing starts at $99 for simple federal + state filing. Final pricing depends on your tax situation, number of forms, states, schedules, and complexity.
                 </p>
                 <Link to="/pricing" className="inline-flex items-center gap-1.5 text-indigo-deep font-semibold text-sm hover:underline mb-6 block">
                   See Detailed Pricing →
@@ -146,7 +146,7 @@ export default function Individual() {
       <section className="py-16 bg-indigo-deep" aria-label="Call to action">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-sora text-white mb-4">Start Filing with Taxagon</h2>
-          <p className="text-indigo-100 mb-8">Secure, professional individual tax filing from $89. No hidden fees.</p>
+          <p className="text-indigo-100 mb-8">Secure, professional individual tax filing from $99. No hidden fees.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-white text-indigo-deep font-bold px-8 py-4 rounded-xl hover:bg-sky-tint transition-all btn-shine">
             Get Started Today <ArrowRight size={16} aria-hidden="true" />
           </Link>

@@ -151,7 +151,7 @@ function CreditCard({
       >
         <div className="flex items-start justify-between">
           <div className="w-11 h-11 rounded-xl bg-parchment group-hover:bg-navy flex items-center justify-center transition-colors shrink-0">
-            <Icon size={18} className="text-navy group-hover:text-white transition-colors" aria-hidden="true" />
+            <Icon size={18} className="text-ink group-hover:text-white transition-colors" aria-hidden="true" />
           </div>
           {badge && (
             <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${badgeColor ?? 'text-green-600 bg-green-50'}`}>
@@ -165,7 +165,7 @@ function CreditCard({
           </h3>
           <p className="text-slate-500 text-sm leading-relaxed">{description}</p>
         </div>
-        <div className="flex items-center gap-1.5 text-navy text-xs font-semibold">
+        <div className="flex items-center gap-1.5 text-ink text-xs font-semibold">
           Visit IRS.gov <ExternalLink size={12} aria-hidden="true" />
         </div>
       </motion.a>
@@ -182,7 +182,7 @@ function SectionHeading({ label, title }: { label: string; title: string }) {
         <div className="w-1 h-8 rounded-full bg-gold" aria-hidden="true" />
         <div>
           <p className="text-xs font-bold tracking-widest text-gold uppercase">{label}</p>
-          <h2 className="text-xl font-bold font-sora text-navy">{title}</h2>
+          <h2 className="text-xl font-bold font-sora text-ink">{title}</h2>
         </div>
       </div>
     </SectionItem>
@@ -207,7 +207,7 @@ export default function CreditsDeductions() {
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold font-sora text-navy leading-tight mb-5"
+            className="text-4xl md:text-5xl font-bold font-sora text-ink leading-tight mb-5"
           >
             Credits &{' '}
             <em className="not-italic text-gold">Deductions</em>
@@ -306,7 +306,7 @@ export default function CreditsDeductions() {
                 </p>
                 <a
                   href="/get-started"
-                  className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-bold px-8 py-3.5 rounded-full transition-all btn-shine text-sm"
+                  className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-ink font-bold px-8 py-3.5 rounded-full transition-all btn-shine text-sm"
                 >
                   Get Started Today
                   <ExternalLink size={14} aria-hidden="true" />

@@ -105,7 +105,7 @@ export default function Header() {
                     className={cn(
                       'px-3.5 py-2 rounded-xl text-sm font-medium transition-colors',
                       location.pathname === link.href
-                        ? 'text-navy bg-warm-tint font-semibold'
+                        ? 'text-ink bg-warm-tint font-semibold'
                         : 'text-slate-600 hover:text-navy hover:bg-warm-tint'
                     )}
                   >
@@ -122,7 +122,7 @@ export default function Header() {
                 href="https://taxagon.clientportal.com/#/login"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center text-sm font-semibold text-navy hover:text-gold transition-colors px-1"
+                className="hidden sm:inline-flex items-center text-sm font-semibold text-ink hover:text-gold transition-colors px-1"
               >
                 Client Login
               </a>
@@ -228,7 +228,7 @@ export default function Header() {
                   href="https://taxagon.clientportal.com/#/login"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full border border-navy/20 text-navy font-semibold py-3 rounded-xl transition-colors hover:bg-warm-tint text-sm"
+                  className="flex items-center justify-center w-full border border-navy/20 text-ink font-semibold py-3 rounded-xl transition-colors hover:bg-warm-tint text-sm"
                 >
                   Client Login
                 </a>

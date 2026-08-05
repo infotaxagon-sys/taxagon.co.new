@@ -48,7 +48,7 @@ export default function Footer() {
   const brandY = useTransform(scrollYProgress, [0, 1], [16, 0])
 
   return (
-    <footer ref={ref} className="bg-navy text-slate-300 pt-16 pb-8" aria-label="Footer">
+    <footer ref={ref} className="bg-navy text-white/90 pt-16 pb-8" aria-label="Footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Gold accent bar */}
@@ -66,7 +66,7 @@ export default function Footer() {
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-[240px]">
+            <p className="text-white/85 text-sm leading-relaxed mb-6 max-w-[240px]">
               {SITE.tagline}
             </p>
             <div className="flex gap-2.5">
@@ -77,7 +77,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-xl bg-white/8 hover:bg-gold hover:text-navy text-slate-400 flex items-center justify-center transition-all"
+                  className="w-9 h-9 rounded-xl bg-white/15 hover:bg-gold hover:text-navy text-white/90 flex items-center justify-center transition-all"
                 >
                   <Icon />
                 </a>
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     to={item.href}
-                    className="text-sm text-slate-400 hover:text-gold transition-colors"
+                    className="text-sm text-white/85 hover:text-gold transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     to={item.href}
-                    className="text-sm text-slate-400 hover:text-gold transition-colors"
+                    className="text-sm text-white/85 hover:text-gold transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -125,20 +125,20 @@ export default function Footer() {
             <ul className="space-y-3.5">
               <li className="flex items-start gap-2.5">
                 <MapPin size={15} className="text-gold shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-sm text-slate-400 leading-snug">
+                <span className="text-sm text-white/85 leading-snug">
                   {SITE.office}<br />
                   {SITE.address}
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={15} className="text-gold shrink-0" aria-hidden="true" />
-                <a href={`tel:${SITE.phone}`} className="text-sm text-slate-400 hover:text-gold transition-colors">
+                <a href={`tel:${SITE.phone}`} className="text-sm text-white/85 hover:text-gold transition-colors">
                   {SITE.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={15} className="text-gold shrink-0" aria-hidden="true" />
-                <a href={`mailto:${SITE.email}`} className="text-sm text-slate-400 hover:text-gold transition-colors">
+                <a href={`mailto:${SITE.email}`} className="text-sm text-white/85 hover:text-gold transition-colors">
                   {SITE.email}
                 </a>
               </li>
@@ -146,13 +146,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-slate-500 text-xs">{SITE.copyright}</p>
+        <div className="border-t border-white/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-white/75 text-xs">{SITE.copyright}</p>
           <a
             href={SITE.portalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-slate-500 hover:text-gold transition-colors"
+            className="text-xs text-white/75 hover:text-gold transition-colors"
           >
             Client Portal →
           </a>
