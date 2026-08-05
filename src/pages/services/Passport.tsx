@@ -29,7 +29,9 @@ export default function Passport() {
     <div className="overflow-x-hidden">
       <section className="mesh-bg py-24 relative overflow-hidden">
         <div aria-hidden="true" className="absolute top-[-10%] right-[0%] w-[400px] h-[400px] rounded-full bg-indigo-deep/8 hero-blob pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+          <div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xs font-bold tracking-widest text-indigo-deep uppercase mb-4">Services</motion.p>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.05 }} className="inline-flex items-center gap-2 bg-sky-tint border border-indigo-deep/15 rounded-full px-3 py-1 text-xs font-semibold text-indigo-deep mb-4">
             <Globe size={12} aria-hidden="true" /> NRI-Focused Service
@@ -46,6 +48,19 @@ export default function Passport() {
               Get Consular Help <ArrowRight size={15} aria-hidden="true" />
             </Link>
           </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.25, duration: 0.6 }}
+            className="hidden lg:block"
+          >
+            <div className="rounded-3xl overflow-hidden shadow-brand aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=75" alt="Travel map, notebook and camera prepared for a trip" className="w-full h-full object-cover" />
+            </div>
+          </motion.div>
+          </div>
         </div>
       </section>
 

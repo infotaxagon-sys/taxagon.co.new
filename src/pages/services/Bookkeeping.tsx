@@ -35,7 +35,9 @@ export default function Bookkeeping() {
     <div className="overflow-x-hidden">
       <section className="mesh-bg py-24 relative overflow-hidden">
         <div aria-hidden="true" className="absolute top-[-10%] right-[0%] w-[400px] h-[400px] rounded-full bg-indigo-deep/8 hero-blob pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+          <div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xs font-bold tracking-widest text-indigo-deep uppercase mb-4">Services</motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-4xl md:text-5xl font-bold font-sora text-slate-900 leading-tight mb-5">
             Bookkeeping &{' '}
@@ -49,6 +51,19 @@ export default function Bookkeeping() {
               Get a Custom Quote <ArrowRight size={15} aria-hidden="true" />
             </Link>
           </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.25, duration: 0.6 }}
+            className="hidden lg:block"
+          >
+            <div className="rounded-3xl overflow-hidden shadow-brand aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=75" alt="Monthly financial dashboard and reports on a laptop" className="w-full h-full object-cover" />
+            </div>
+          </motion.div>
+          </div>
         </div>
       </section>
 
